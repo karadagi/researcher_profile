@@ -265,6 +265,22 @@ export const PUBLICATIONS: Publication[] = [
     bibtex: '',
     tags: ['Architecture', 'Tools'],
     links: { pdf: 'https://www.food4rhino.com/en/app/metamap' }
+  },
+  {
+    id: 'p13',
+    title: 'Eddy3D Visualizer',
+    authors: [
+      { name: 'I Karadag', isMe: true }
+    ],
+    venue: 'Web Tool',
+    year: 2025,
+    month: '',
+    citations: 0,
+    thumbnail: 'placeholder',
+    abstract: 'Web-based visualizer for Eddy3D simulation results.',
+    bibtex: '',
+    tags: ['Web Tool', 'Visualization', 'CFD'],
+    links: { pdf: 'https://eddy3d-dev.github.io/Eddy3D-Visualizer/' }
   }
 ];
 
