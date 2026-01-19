@@ -31,14 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         }`}
     >
       <div className="max-w-[1100px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a
-          href="#hero"
-          className="hover:opacity-70 transition-opacity"
-        >
-          <span className="text-xl font-bold font-serif tracking-tight text-slate-900 dark:text-slate-100">
-            IK.
-          </span>
-        </a>
+        <div />
 
         <div className="flex items-center gap-6 md:gap-10">
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
