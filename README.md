@@ -1,20 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Academic Researcher Profile
 
-# Run and deploy your AI Studio app
+**Live Website:** https://karadagi.github.io/researcher_profile/
 
-This contains everything you need to run your app locally.
+## About
 
-View your app in AI Studio: https://ai.studio/apps/drive/1HPRzckEVsNnIQL2tyF2NwGFGLy6r8oVY
+Dr. Ilker Karadag is an Associate Professor of Architecture whose research lies at the intersection of machine learning, environmental analysis, and sustainable design. His work explores predictive models for airflow and microclimatic behavior, the integration of computational simulations with empirical data, and the application of these methods to bioclimatic design and cultural heritage contexts.
 
-## Run Locally
+He holds a 2023 patent for a novel wind-analysis apparatus that enables accessible physical visualization of airflow around architectural models. In 2025, he was recognized in Stanford University’s global citation-impact rankings for his contributions to environmental simulation and architectural research.
 
-**Prerequisites:**  Node.js
+## Core Interests
+- Machine Learning
+- Environmental Analysis
+- Sustainable Design
+- CFD
+- Bioclimatic Design
+- Cultural Heritage
 
+## Current Focus
+Exploring predictive models for airflow and microclimatic behavior to enhance bioclimatic design and cultural heritage preservation.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Setup & Development
+
+This project is built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
+
+### Installation
+```bash
+npm install
+```
+
+### Run Locally
+```bash
+npm run dev
+```
+
+### Build
+```bash
+npm run build
+```
