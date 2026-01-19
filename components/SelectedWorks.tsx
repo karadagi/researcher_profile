@@ -13,9 +13,9 @@ const SelectedWorks: React.FC = () => {
   // Select specific papers matching the user's request
   const selectedPapers = PUBLICATIONS.filter(p => ['p1', 'p2', 'p3'].includes(p.id)).map(p => {
     // Override thumbnails with local public images
-    if (p.id === 'p1') return { ...p, thumbnail: '/EDU_AI_paper.png' };
-    if (p.id === 'p2') return { ...p, thumbnail: '/Conservation.jpg' };
-    if (p.id === 'p3') return { ...p, thumbnail: '/DesignFor.png' };
+    if (p.id === 'p1') return { ...p, thumbnail: './EDU_AI_paper.png' };
+    if (p.id === 'p2') return { ...p, thumbnail: './Conservation.jpg' };
+    if (p.id === 'p3') return { ...p, thumbnail: './DesignFor.png' };
     return p;
   });
 
