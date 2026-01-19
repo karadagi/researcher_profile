@@ -49,8 +49,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} vite build
       - name: Create 404 fallback
         run: cp dist/index.html dist/404.html
+      - name: Force NoJekyll
+        run: touch dist/.nojekyll
+      - name: Create Test Probe
+        run: echo "<h1>Test</h1>" > dist/test.html
       - name: Debug - List dist contents
-        run: ls -R dist
+        run: ls -laR dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
