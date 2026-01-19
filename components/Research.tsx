@@ -29,7 +29,7 @@ const Research: React.FC = () => {
               <div className="w-24 h-24 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-2xl flex items-center justify-center p-5 shadow-inner border border-slate-200 dark:border-slate-700 group-hover:scale-110 transition-transform duration-500">
                 {/* Dynamic Icon based on ID or content */}
                 {/* Dynamic Icon based on ID or content */}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-blue-500 dark:text-blue-400 opacity-80 group-hover:opacity-100 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-slate-800 dark:text-slate-200 opacity-80 group-hover:opacity-100 transition-opacity">
                   <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
                   <polyline points="14 2 14 8 20 8" />
                   <path d="M16 13H8" />
@@ -41,7 +41,7 @@ const Research: React.FC = () => {
 
             {/* Content */}
             <div className="flex-1 space-y-3">
-              <h3 className="text-xl font-serif font-medium leading-tight group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
+              <h3 className="text-xl font-serif font-medium leading-tight transition-colors">
                 {pub.title}
               </h3>
 
