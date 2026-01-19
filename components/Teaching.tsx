@@ -23,14 +23,22 @@ const Teaching: React.FC = () => {
                   Georgia Tech — Spring 2025
                 </p>
               </div>
-              <a
-                href="https://vip-smur.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-              >
-                Visit Course Site
-              </a>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setExpandedCourse('smur-poster')}
+                  className="px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  Poster
+                </button>
+                <a
+                  href="https://vip-smur.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                >
+                  Visit Course Site
+                </a>
+              </div>
             </div>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
@@ -39,8 +47,40 @@ const Teaching: React.FC = () => {
             </p>
           </div>
         </div>
-
       </div>
+
+      {/* Poster Modal */}
+      {expandedCourse === 'smur-poster' && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fadeIn"
+          onClick={() => setExpandedCourse(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full h-auto max-h-[90vh] bg-white dark:bg-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col p-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-end p-2">
+              <button
+                onClick={() => setExpandedCourse(null)}
+                className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors"
+                aria-label="Close Poster"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div className="overflow-auto flex-1 flex items-center justify-center bg-slate-100 dark:bg-slate-900 rounded-xl">
+              <img
+                src="SMUR_Poster.png"
+                alt="SMUR Poster"
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
