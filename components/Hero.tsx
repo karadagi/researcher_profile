@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
             {/* PDF Viewer content */}
             <div className="flex-1 bg-slate-100 dark:bg-slate-900 relative">
               <iframe
-                src="/Portfolio.pdf"
+                src="Portfolio.pdf"
                 className="w-full h-full border-none"
                 title="Portfolio PDF"
               />
