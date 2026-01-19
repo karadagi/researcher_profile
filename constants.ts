@@ -233,6 +233,38 @@ export const PUBLICATIONS: Publication[] = [
     bibtex: '@article{kurucay2022computational,\n  title={Computational Approaches in 21st Century Architectural Design: Defining Digital Representation Methods},\n  author={Kuru{\\c{c}}ay, E and Karada{\\u{g}}, {\\.I}},\n  journal={Duzce University Journal of Science and Technology},\n  volume={10},\n  number={3},\n  pages={1201--1217},\n  year={2022}\n}',
     tags: ['Computation', 'Design Theory'],
     links: { pdf: 'https://scholar.google.com/citations?view_op=view_citation&hl=tr&user=pMVv_ewAAAAJ&citation_for_view=pMVv_ewAAAAJ:u-x6o8ySG0sC' }
+  },
+  {
+    id: 'p11',
+    title: 'Archidynamics',
+    authors: [
+      { name: 'I Karadag', isMe: true }
+    ],
+    venue: 'Website',
+    year: 2024,
+    month: '',
+    citations: 0,
+    thumbnail: 'placeholder',
+    abstract: 'Archidynamics website.',
+    bibtex: '',
+    tags: ['Architecture', 'Design'],
+    links: { pdf: 'https://www.archidynamics.com' }
+  },
+  {
+    id: 'p12',
+    title: 'MetaMAP',
+    authors: [
+      { name: 'I Karadag', isMe: true }
+    ],
+    venue: 'Food4Rhino',
+    year: 2024,
+    month: '',
+    citations: 0,
+    thumbnail: 'placeholder',
+    abstract: 'MetaMAP application on Food4Rhino.',
+    bibtex: '',
+    tags: ['Architecture', 'Tools'],
+    links: { pdf: 'https://www.food4rhino.com/en/app/metamap' }
   }
 ];
 

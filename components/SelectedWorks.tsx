@@ -11,11 +11,13 @@ const SelectedWorks: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Select specific papers matching the user's request
-  const selectedPapers = PUBLICATIONS.filter(p => ['p1', 'p2', 'p3'].includes(p.id)).map(p => {
+  const selectedPapers = PUBLICATIONS.filter(p => ['p1', 'p2', 'p3', 'p11', 'p12'].includes(p.id)).map(p => {
     // Override thumbnails with local public images
     if (p.id === 'p1') return { ...p, thumbnail: 'EDU_AI_paper.png' };
     if (p.id === 'p2') return { ...p, thumbnail: 'Conservation.jpg' };
     if (p.id === 'p3') return { ...p, thumbnail: 'DesignFor.png' };
+    if (p.id === 'p11') return { ...p, thumbnail: 'archidynamics.jpeg' };
+    if (p.id === 'p12') return { ...p, thumbnail: 'metamap.png' };
     return p;
   });
 
@@ -158,7 +160,9 @@ const PublicationCard: React.FC<{ paper: Publication }> = ({ paper }) => {
           href={{
             'p1': 'https://karadagi.github.io/EDU_AI_EXPLAINER/',
             'p2': 'https://karadagi.github.io/Conservation_Architectural_Heritage/',
-            'p3': 'https://karadagi.github.io/wind_comfort_research/'
+            'p3': 'https://karadagi.github.io/wind_comfort_research/',
+            'p11': 'https://www.archidynamics.com',
+            'p12': 'https://www.food4rhino.com/en/app/metamap'
           }[paper.id] || paper.links?.pdf || '#'}
           target="_blank"
           rel="noopener noreferrer"
