@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { COURSES } from '../constants';
 
 const Teaching: React.FC = () => {
@@ -50,16 +51,16 @@ const Teaching: React.FC = () => {
       </div>
 
       {/* Poster Modal */}
-      {expandedCourse === 'smur-poster' && (
+      {expandedCourse === 'smur-poster' && createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fadeIn"
+          className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/80 p-4 animate-fadeIn"
           onClick={() => setExpandedCourse(null)}
         >
           <div
-            className="relative max-w-4xl w-full h-auto max-h-[90vh] bg-white dark:bg-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col p-2"
+            className="relative max-w-6xl w-auto h-auto max-h-[95vh] bg-white dark:bg-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col p-2"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-end p-2">
+            <div className="flex justify-end p-2 flex-none">
               <button
                 onClick={() => setExpandedCourse(null)}
                 className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors"
@@ -71,15 +72,16 @@ const Teaching: React.FC = () => {
                 </svg>
               </button>
             </div>
-            <div className="overflow-auto flex-1 flex items-center justify-center bg-slate-100 dark:bg-slate-900 rounded-xl">
+            <div className="flex-1 min-h-0 flex items-center justify-center bg-slate-100 dark:bg-slate-900 rounded-xl overflow-hidden">
               <img
                 src="SMUR_Poster.png"
                 alt="SMUR Poster"
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-[85vh] object-contain"
               />
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
