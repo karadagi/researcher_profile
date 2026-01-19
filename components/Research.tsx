@@ -17,7 +17,7 @@ const Research: React.FC = () => {
 
   return (
     <div>
-      <h2 className="text-xs uppercase tracking-widest font-bold text-accent-light dark:text-accent-dark mb-10">
+      <h2 className="text-lg uppercase tracking-widest font-bold text-slate-900 dark:text-white mb-10">
         02 / Research
       </h2>
 

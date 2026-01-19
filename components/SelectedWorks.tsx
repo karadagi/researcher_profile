@@ -72,7 +72,7 @@ const SelectedWorks: React.FC = () => {
   return (
     <div className="overflow-visible py-32" ref={containerRef}>
       <div className="mb-16 relative z-10">
-        <h2 className="text-xs uppercase tracking-widest font-bold text-accent-light dark:text-accent-dark mb-6">
+        <h2 className="text-lg uppercase tracking-widest font-bold text-slate-900 dark:text-white mb-6">
           03 / Selected Works
         </h2>
       </div>
