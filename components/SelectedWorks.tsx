@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { PUBLICATIONS } from '../constants';
+import { PUBLICATIONS, WEB_TOOLS } from '../constants';
 import { Publication } from '../types';
 
 const SelectedWorks: React.FC = () => {
@@ -11,7 +11,7 @@ const SelectedWorks: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Select specific papers matching the user's request
-  const selectedPapers = PUBLICATIONS.filter(p => ['p1', 'p2', 'p3', 'p11', 'p12', 'p13'].includes(p.id)).map(p => {
+  const selectedPapers = [...PUBLICATIONS.filter(p => ['p1', 'p2', 'p3'].includes(p.id)), ...WEB_TOOLS].map(p => {
     // Override thumbnails with local public images
     if (p.id === 'p1') return { ...p, thumbnail: 'EDU_AI_paper.png' };
     if (p.id === 'p2') return { ...p, thumbnail: 'Conservation.jpg' };

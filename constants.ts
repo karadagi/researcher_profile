@@ -234,6 +234,9 @@ export const PUBLICATIONS: Publication[] = [
     tags: ['Computation', 'Design Theory'],
     links: { pdf: 'https://scholar.google.com/citations?view_op=view_citation&hl=tr&user=pMVv_ewAAAAJ&citation_for_view=pMVv_ewAAAAJ:u-x6o8ySG0sC' }
   },
+];
+
+export const WEB_TOOLS: Publication[] = [
   {
     id: 'p11',
     title: 'Archidynamics',
