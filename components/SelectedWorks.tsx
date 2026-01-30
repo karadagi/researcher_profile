@@ -163,7 +163,7 @@ const PublicationCard: React.FC<{ paper: Publication }> = ({ paper }) => {
             'p2': 'https://karadagi.github.io/Conservation_Architectural_Heritage/',
             'p3': 'https://karadagi.github.io/wind_comfort_research/',
             'p11': 'https://www.archidynamics.com',
-            'p12': 'https://metamap-dev.github.io/MetaMAP-Website/',
+            'p12': 'https://metamap-dev.github.io/',
             'p13': 'https://eddy3d-dev.github.io/Eddy3D-Visualizer/'
           }[paper.id] || paper.links?.pdf || '#'}
           target="_blank"
